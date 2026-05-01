@@ -1,0 +1,40 @@
+{
+  "name": "healthkit-dummy-seeder",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "postinstall": "node scripts/sync-bundled-chunk-assets.mjs",
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "prebuild": "expo prebuild",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "generate:sample": "node scripts/generate-year-sample.mjs",
+    "import:from-apple-export": "node scripts/build-from-apple-export.mjs && node scripts/sync-bundled-chunk-assets.mjs",
+    "import:sync-chunk-assets": "node scripts/sync-bundled-chunk-assets.mjs"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^7.2.2",
+    "@react-navigation/native-stack": "^7.14.11",
+    "expo": "~54.0.33",
+    "expo-asset": "~12.0.12",
+    "expo-dev-client": "~6.0.20",
+    "expo-document-picker": "~14.0.8",
+    "expo-file-system": "~19.0.21",
+    "expo-status-bar": "~3.0.9",
+    "fast-xml-parser": "^5.2.5",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-health": "^1.19.0",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "sax": "^1.4.1",
+    "typescript": "~5.9.2"
+  },
+  "private": false
+}

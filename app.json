@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "healthkit-dummy-seeder",
+    "slug": "healthkit-dummy-seeder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.healthkitdummyseeder.dev"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.healthkitdummyseeder.dev"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      "expo-document-picker",
+      [
+        "react-native-health",
+        {
+          "healthSharePermission": "Read Health data only if needed to verify this dev import tool.",
+          "healthUpdatePermission": "Write dummy steps, heart rate, and other samples for app testing."
+        }
+      ]
+    ]
+  }
+}

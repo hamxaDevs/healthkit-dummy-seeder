@@ -1,0 +1,18 @@
+export const colors = {
+  background: '#f4f4f5',
+  surface: '#ffffff',
+  text: '#18181b',
+  textMuted: '#52525b',
+  textSubtle: '#64748b',
+  border: '#e4e4e7',
+  borderInput: '#d4d4d8',
+  warn: '#b45309',
+  primary: '#2563eb',
+  primaryPressed: '#1d4ed8',
+  secondaryBtn: '#e4e4e7',
+  secondaryBtnText: '#27272a',
+  overlay: 'rgba(15, 23, 42, 0.55)',
+  modalHint: '#94a3b8',
+  logText: '#3f3f46',
+  progressTrack: '#e2e8f0',
+} as const
