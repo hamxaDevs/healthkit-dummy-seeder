@@ -37,7 +37,6 @@ yarn-error.*
 *.tsbuildinfo
 
 # generated native folders
-/ios
 /android
 
 # Real Apple Health exports are often multi-GB. Metro cannot bundle them (2 GiB limit).
